@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.toolchain.gnu.mingw.base.721453817/MAKE/delimiter=;
+environment/project/cdt.managedbuild.toolchain.gnu.mingw.base.721453817/MAKE/operation=replace
+environment/project/cdt.managedbuild.toolchain.gnu.mingw.base.721453817/MAKE/value=D\:\\MinGW\\bin\\mingw32-make.exe
+environment/project/cdt.managedbuild.toolchain.gnu.mingw.base.721453817/NDK-BUILD/delimiter=;
+environment/project/cdt.managedbuild.toolchain.gnu.mingw.base.721453817/NDK-BUILD/operation=replace
+environment/project/cdt.managedbuild.toolchain.gnu.mingw.base.721453817/NDK-BUILD/value=D\:\\Download\\android-ndk-r10c\\ndk-build.cmd
+environment/project/cdt.managedbuild.toolchain.gnu.mingw.base.721453817/append=true
+environment/project/cdt.managedbuild.toolchain.gnu.mingw.base.721453817/appendContributed=true

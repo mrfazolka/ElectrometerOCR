@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+	<FrameLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    >
+	
+	    <org.opencv.android.JavaCameraView
+	        android:layout_width="match_parent"
+	        android:layout_height="360dp"
+	        android:scaleType="fitCenter"
+	        android:visibility="visible"
+	        android:id="@+id/OpenCvView"
+	        opencv:show_fps="true"
+	        opencv:camera_id="any"
+	        android:background="#FFFFFF"
+	         />
+<!-- 	android:background="#FFFFFF" -->
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal"
+	        >
+		<!-- android:visibility="invisible" -->
+		
+	        <LinearLayout
+	            android:id="@+id/numbersLayout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_weight="0.90"
+	            android:orientation="vertical" >
+
+	            <ImageView
+	                android:id="@+id/imageView1"
+	                android:layout_width="match_parent"
+	                android:layout_height="140dp"
+	                android:src="@drawable/ic_launcher" />	            
+
+	            <ImageView
+	                android:id="@+id/imageView2"
+	                android:layout_width="match_parent"
+	                android:layout_height="100dp"
+	                android:src="@drawable/blank" />
+
+	            <TableLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+
+	                <TableRow
+	                    android:id="@+id/tableRow1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" >
+
+	                    <ImageView
+	                        android:id="@+id/ImageView03"
+	                        android:layout_width="40dp"
+	                        android:layout_height="64dp"
+	                        android:layout_marginLeft="10dp"
+	                        android:layout_marginRight="10dp"
+	                        android:src="@drawable/blank" />
+
+	                    <ImageView
+	                        android:id="@+id/ImageView02"
+	                        android:layout_width="40dp"
+	                        android:layout_height="64dp"
+	                        android:layout_marginLeft="10dp"
+	                        android:layout_marginRight="10dp"
+	                        android:src="@drawable/blank" />
+
+	                    <ImageView
+	                        android:id="@+id/ImageView01"
+	                        android:layout_width="40dp"
+	                        android:layout_height="64dp"
+	                        android:layout_marginLeft="10dp"
+	                        android:layout_marginRight="10dp"
+	                        android:src="@drawable/blank" />
+
+	                    <ImageView
+	                        android:id="@+id/imageView5"
+	                        android:layout_width="40dp"
+	                        android:layout_height="64dp"
+	                        android:layout_marginLeft="10dp"
+	                        android:layout_marginRight="10dp"
+	                        android:src="@drawable/blank" />
+
+	                    <ImageView
+	                        android:id="@+id/imageView6"
+	                        android:layout_width="40dp"
+	                        android:layout_height="64dp"
+	                        android:layout_marginLeft="10dp"
+	                        android:layout_marginRight="10dp"
+	                        android:src="@drawable/blank" />
+
+	                    <ImageView
+	                        android:id="@+id/imageView7"
+	                        android:layout_width="40dp"
+	                        android:layout_height="64dp"
+	                        android:layout_marginLeft="10dp"
+	                        android:layout_marginRight="10dp"
+	                        android:src="@drawable/blank" />
+
+	                    <ImageView
+	                        android:id="@+id/imageView8"
+	                        android:layout_width="40dp"
+	                        android:layout_height="64dp"
+	                        android:layout_marginLeft="10dp"
+	                        android:layout_marginRight="10dp"
+	                        android:src="@drawable/blank" />
+	                </TableRow>
+
+	            </TableLayout>
+
+	            <EditText
+	                android:id="@+id/editText1"
+	                android:layout_width="match_parent"
+	                android:layout_height="60dp"
+	                android:layout_gravity="bottom"
+	                android:ems="10" >
+
+	                <requestFocus />
+	            </EditText>
+
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="78dp"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical" >
+
+	            <Switch
+	                android:id="@+id/switch1"
+	                android:layout_width="78dp"
+	                android:layout_height="40dp"
+	                android:checked="false"
+	                android:switchTextAppearance="?android:attr/textAppearanceLargeInverse"
+	                android:textOff="An"
+	                android:textOn="Dig"
+	                android:thumb="@drawable/blank"
+	                android:track="@drawable/blank" />
+
+	            <Button
+	                android:id="@+id/button2"
+	                android:layout_width="match_parent"
+	                android:layout_height="55dp"
+	                android:layout_marginTop="40dp"
+	                android:text="Uložit..." />
+
+	            <Button
+	                android:visibility="invisible"
+	                android:id="@+id/btSaveElektromery"
+	                android:layout_width="match_parent"
+	                android:layout_height="50dp"
+	                android:text="Ukládej výseky" />
+
+	            <Button
+	                android:id="@+id/button1"
+	                android:layout_width="match_parent"
+	                android:layout_height="55dp"
+	                android:layout_marginTop="110dp"
+	                android:enabled="false"
+	                android:text="Running" />
+	        </LinearLayout>
+
+	    </LinearLayout>
+	
+	</FrameLayout>
+</LinearLayout>
